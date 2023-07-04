@@ -1,0 +1,14 @@
+{
+    "configs": [
+        {
+            "panelPath": "Assets/IFramework/UI/__Example/res/Panel01.prefab",
+            "layer": 1,
+            "order": 2
+        },
+        {
+            "panelPath": "Assets/IFramework/UI/__Example/res/Panel02.prefab",
+            "layer": 3,
+            "order": 5
+        }
+    ]
+}
