@@ -49,13 +49,6 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
-    "com.woo.wooasset": {
-      "version": "https://github.com/OnClick9927/WooAsset.git#1.0.7",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "ecf9173e8cba7ea756c7f42191ea4b3f848615c4"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,
