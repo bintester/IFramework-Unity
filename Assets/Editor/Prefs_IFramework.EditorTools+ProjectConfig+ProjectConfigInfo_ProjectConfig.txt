@@ -7,5 +7,6 @@
     "logIgnoreFiles": [
         "Assets/IFramework/Core/Editor/EditorTools.UnityLogger.cs"
     ],
-    "projectPath": "Assets/Project"
+    "projectPath": "Assets/Project",
+    "NameSpace": "IFramework"
 }

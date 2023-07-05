@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2EA83E2D-B055-29A0-D452-8FB72E22F464}</ProjectGuid>
+    <ProjectGuid>{E01E3E24-0CB6-A53B-FD15-A6D40A57C35F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>UnityEngine.TestRunner</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -26,7 +26,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -35,7 +35,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -56,217 +56,119 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageUrgencyType.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectTranslatorPool.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaTable.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\Module\OperationRecorderModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\SubjectType.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingletonPath.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\Item\UIItemOperation.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\Module\IOperationRecorderModule.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaDLL.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\GenAttributes.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Module.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\SingletonCollection.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaFunction.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\UIItemViewCollection.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\Type\MessageModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\InjectModule.InjectTypeMap.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Group\IViewEventHandler.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\UILayer.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\ILuaTask.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectCasters.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Entity\TimerEntity.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\ISingleton.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\LuaEX.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\SuperScrollView\LoopListView.cs" />
-    <Compile Include="Assets\Project\Scripts\PanelNames.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Entity\ITimerEntity.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\Item\UIModule.ItemPool.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\GuideMask.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\SignatureLoader.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\EnvironmentType.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\Type\TypeHandlerQueue.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\Item\UIModule.ItemsPool.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\StablePriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\OnEnvironmentInitAttribute.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Module\TimerModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\InjectAttribute.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForTicks.cs" />
-    <Compile Include="Assets\IFramework\UI\MVC\MvcGroups.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\Module\OperationRecorderModule.HeadState.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\Utils.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\UIEx.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForMilliseconds.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\TypeExtensions.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\LoopScrollRect.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Empty4Raycast.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\InjectModule.InjectMap.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\SubscribeAction.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Entity\EntityState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\GenericPriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingletonPropertyClass.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\States\CommandGroupState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\MessageQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForFrames.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\RawObject.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\Singleton.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectTranslator.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Load\LoadItemAsyncOperation.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\TemplateEngine\TemplateEngine.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\IInjectModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\String\StringMessageModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\SingletonCreator.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Game.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\PanelState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingletonProperty.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\Type\IMessageModule.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Group\MixedGroups.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Group\IGroups.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\States\CommandState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\Framework.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForSeconds.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Load\UIAsset.cs" />
-    <Compile Include="Assets\IFramework\UI\MVC\UIView.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForFrame.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\YieldInstruction.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaEnv.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Log\ILoger.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\SingletonProperty.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\ITimeCalculator.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\UnityEx.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\States\ActionState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\IEventArgs.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Launcher.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForHours.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\MethodWarpsCache.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\SimplePriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\SuperScrollView\LoopListViewItem.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\HandlerQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Ex.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\Subject.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\UIModule.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\LuaArgs.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Log\ILogRecorder.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\LuaField.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\CodeEmit.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Loom\LoomModule.cs" />
-    <Compile Include="Assets\Project\Lua\A.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\GenericPriorityQueueNode.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageUrgency.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\IPriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Coroutine.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\FastPriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\TimeCalculator.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\__Example\AtlasExample.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\FastPriorityQueueNode.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\UIObjectView.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\Environment.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitUtil.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\XLuaModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\Type\TypeMessageQueue.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\GameObjectView.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\ObjectPool.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\IXLuaDisposable.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\IAwaiter.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectPool.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingletonCreator.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\IMessage.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaException.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\DelegateBridge.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Modules.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\CoroutineState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\StablePriorityQueueNode.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageErrorCode.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\IMessageListener.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForMinutes.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\LuaGroups.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Load\LoadPanelAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Module\CoroutineModule.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\GenericDelegateBridge.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Load\ShowPanelAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\XluaMain.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\Runtime\IXLuaLoader.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\Module\OperationRecorderEx.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Environment\IEnvironment.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\UGUIEventListener.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\IAwaitable.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageListener.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Singleton\SingletonPropertyClass.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\IFixedSizePriorityQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\IModules.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\CopyByValue.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\Scripts\RedPointTree.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Log\Log.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\StaticLuaCallbacks.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageAwaiter.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\UIPanel.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Log\CSLogger.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\Message.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Module\ITimerModule.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\ScriptMark.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\States\BaseState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\String\StringMessageQueue.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Object\UIItemView.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaBase.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\String\IStringMessageModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\InjectModule.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\UpdateModule.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\InternalGlobals.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\ModulePriority.cs" />
-    <Compile Include="Assets\IFramework\HotFix\Lua\__Example\LuaGame.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Inject\InjectModule.InjectInstanceMap.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForTimeSpan.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitWhile.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Instruction\WaitForDays.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\States\ActionGroupState.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\Module\ICoroutineModule.cs" />
-    <Compile Include="Assets\IFramework\UI\Tools\__Example\LoopExample.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Module\String\StringHandlerQueue.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\CoroutineAwaiter.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Unit.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Recorder\Module\ICommand.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\Load\UIAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\ICoroutine.cs" />
-    <Compile Include="Assets\IFramework\UI\Runtime\PanelPathCollect.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Entity\InnerType.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingleton.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\TestListenerWrapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\ITestAssemblyProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyWrapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector3ComparerWithEqualsOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\QuaternionEqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Filters\CategoryFilterExtended.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\TestPlatform.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\IScriptingRuntimeProxy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\TestRunCallbackAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\BaseDelegator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityTestAssemblyRunner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityTestExecutionContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\FailCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\UnityTestMethodCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector4ComparerWithEqualsOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\SynchronousFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\InvalidSignatureException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\IOuterUnityTestAction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableApplyChangesToContextCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RuntimeTestRunnerFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\CoroutineRunner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\UnityTestAssemblyBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\PlayerQuitHandler.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\IStateSerializer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\LogAssert.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\IEnumerableTestMethodCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\PlaymodeTestsControllerSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\CompositeWorkItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\RestoreTestContextAfterDomainReload.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\TestResultExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\PlayModeRunnerCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\TestActionCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\SetUpTearDownCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector4EqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableSetUpTearDownCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\IPrebuildSceneSetup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\MonoBehaviourTest\IMonoBehaviourTest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnitySetUpAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\ImmediateEnumerableCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItemDataHolder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\MonoBehaviourTest\MonoBehaviourTest.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\RemoteTestResultSender.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityPlatformAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\LogScope\LogMatch.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\TestCommandPcHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\ConstructDelegator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\ConditionalIgnoreAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyLoadProxy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\StacktraceFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\LogScope\ILogScope.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\PostBuildCleanupAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Messages\IEditModeTestYieldInstruction.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\PlaymodeTestsController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRenderer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\PlaymodeWorkItemFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRepeatedTestCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\UnexpectedLogMessageException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Filters\AssemblyNameFilter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\ITestRunCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\PlayerTestAssemblyProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\WorkItemFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableTestState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\LogScope\LogScope.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\TestCommandBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableRetryTestCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityWorkItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector3EqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\ActionDelegator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\TestExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector2ComparerWithEqualsOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultDataWithTestData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityCombinatorialStrategy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandBase.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\AllocatingGCMemoryConstraint.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityTearDownAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\IAsyncTestAssemblyBuilder.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\TestRunCallbackListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\UnhandledLogMessageException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\IRemoteTestResultDataFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultDataFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\UnityLogCheckDelegatingCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\ITestRunnerListener.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\TestEnumeratorWrapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\IPostBuildCleanup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\ColorEqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\ConstraintsExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityTestAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\ScriptingRuntimeProxy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\Callbacks\TestResultRendererCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\TestRunner\RemoteHelpers\PlayerConnectionMessageIds.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Vector2EqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\Utils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestMustExpectAllLogsAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\LogScope\LogEvent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\CoroutineTestWorkItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AttributeHelper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\EnumerableTestMethodCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\AssemblyLoadProxy.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\BeforeAfterTestCommandState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\UnityTestTimeoutException.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\PrebuildSceneSetupAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Commands\OuterUnityTestActionCommand.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\AssemblyProvider\IAssemblyWrapper.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\NUnitExtensions\Runner\DefaultTestWorkItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Utils\FloatEqualityComparer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\Assertions\Is.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\Item\UIItem.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\Item\UIItemPool.lua.txt" />
-    <None Include="Assets\XLua\XLua\Resources\xlua\util.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\LuaGroups.lua.txt" />
-    <None Include="Assets\Project\Lua\FixCsharp.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\index.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\MVC\LuaGroups_MVC.lua.txt" />
-    <None Include="Assets\XLua\Plugins\x86_64\xlua.dll" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\Base.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\LuaTask.lua.txt" />
-    <None Include="Assets\XLua\XLua\Resources\perf\profiler.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\LuaObject.lua.txt" />
-    <None Include="Assets\XLua\Plugins\x86\xlua.dll" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Main.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\UIView.lua.txt" />
-    <None Include="Assets\XLua\XLua\Resources\perf\memory.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UpdateFunctions.lua.txt" />
-    <None Include="Assets\IFramework\UI\Tools\Shaders\GuideMask.shader" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\UIObject.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\Json.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\EventSystem.lua.txt" />
-    <None Include="Assets\Project\Lua\GlobalDefine.lua.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\UI\MVC\UIView_MVC.lua.txt" />
-    <None Include="Assets\Project\Lua\GameLogic.lua.txt" />
-    <None Include="Assets\XLua\XLua\Resources\tdr\tdr.lua.txt" />
-    <None Include="Assets\XLua\XLua\CHANGELOG.txt" />
-    <None Include="Assets\IFramework\HotFix\Lua\Runtime\Resources\Framework\Tools\Log.lua.txt" />
+    <None Include="Library\PackageCache\com.unity.test-framework@1.1.24\UnityEngine.TestRunner\UnityEngine.TestRunner.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -464,20 +366,8 @@
     <Reference Include="UnityEngine.XRModule">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\Variations\mono\Managed\UnityEngine.XRModule.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VSCode.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="WooAsset.Editor">
-      <HintPath>Library\ScriptAssemblies\WooAsset.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    <Reference Include="nunit.framework">
+      <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -824,16 +714,6 @@
     <Reference Include="System.Xml.Serialization">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="WooAsset.Player.csproj">
-      <Project>{57BD9E44-548A-50B0-F519-39D8FF2D46C6}</Project>
-      <Name>WooAsset.Player</Name>
-    </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{814D5A06-A659-278B-48EC-4D99719E650D}</Project>
-      <Name>UnityEngine.UI.Player</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
