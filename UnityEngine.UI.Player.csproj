@@ -263,17 +263,17 @@
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\Properties\AssemblyInfo.cs">
       <Link>Runtime\Properties\AssemblyInfo.cs</Link>
     </Compile>
-    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\IMask.cs">
-      <Link>Runtime\UI\Core\IMask.cs</Link>
-    </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Layout\HorizontalOrVerticalLayoutGroup.cs">
       <Link>Runtime\UI\Core\Layout\HorizontalOrVerticalLayoutGroup.cs</Link>
     </Compile>
-    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs">
-      <Link>Runtime\EventSystem\InputModules\StandaloneInputModule.cs</Link>
+    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\IMask.cs">
+      <Link>Runtime\UI\Core\IMask.cs</Link>
     </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\EventHandle.cs">
       <Link>Runtime\EventSystem\EventHandle.cs</Link>
+    </Compile>
+    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\InputModules\StandaloneInputModule.cs">
+      <Link>Runtime\EventSystem\InputModules\StandaloneInputModule.cs</Link>
     </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Layout\LayoutGroup.cs">
       <Link>Runtime\UI\Core\Layout\LayoutGroup.cs</Link>
@@ -281,11 +281,11 @@
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\Scrollbar.cs">
       <Link>Runtime\UI\Core\Scrollbar.cs</Link>
     </Compile>
-    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\ToggleGroup.cs">
-      <Link>Runtime\UI\Core\ToggleGroup.cs</Link>
-    </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\FontUpdateTracker.cs">
       <Link>Runtime\UI\Core\FontUpdateTracker.cs</Link>
+    </Compile>
+    <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\UI\Core\ToggleGroup.cs">
+      <Link>Runtime\UI\Core\ToggleGroup.cs</Link>
     </Compile>
     <Compile Include="C:\Program Files\Unity\Hub\Editor\2020.3.3f1c1\Editor\Data\Resources\PackageManager\BuiltInPackages\com.unity.ugui\Runtime\EventSystem\RaycastResult.cs">
       <Link>Runtime\EventSystem\RaycastResult.cs</Link>

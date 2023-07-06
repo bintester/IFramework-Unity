@@ -1341,9 +1341,6 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(IFramework.UI.MVC.UIView), IFrameworkUIMVCUIViewWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(IFramework.Hotfix.Lua.LuaArgs), IFrameworkHotfixLuaLuaArgsWrap.__Register);
-        
-        
             translator.DelayWrapLoader(typeof(IFramework.Hotfix.Lua.LuaEX), IFrameworkHotfixLuaLuaEXWrap.__Register);
         
         
@@ -1430,13 +1427,13 @@ namespace XLua.CSObjectWrap
         
             translator.DelayWrapLoader(typeof(IFramework.Coroutine.WaitForFrames), IFrameworkCoroutineWaitForFramesWrap.__Register);
         
+        
+            translator.DelayWrapLoader(typeof(IFramework.Coroutine.WaitForHours), IFrameworkCoroutineWaitForHoursWrap.__Register);
+        
         }
         
         static void wrapInit9(LuaEnv luaenv, ObjectTranslator translator)
         {
-        
-            translator.DelayWrapLoader(typeof(IFramework.Coroutine.WaitForHours), IFrameworkCoroutineWaitForHoursWrap.__Register);
-        
         
             translator.DelayWrapLoader(typeof(IFramework.Coroutine.WaitForMilliseconds), IFrameworkCoroutineWaitForMillisecondsWrap.__Register);
         

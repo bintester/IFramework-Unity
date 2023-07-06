@@ -56,7 +56,6 @@
 		<type fullname="IFramework.UI.SuperScrollView.LoopListViewItem" preserve="all"/>
 		<type fullname="IFramework.UI.MVC.MvcGroups" preserve="all"/>
 		<type fullname="IFramework.UI.MVC.UIView" preserve="all"/>
-		<type fullname="IFramework.Hotfix.Lua.LuaArgs" preserve="all"/>
 		<type fullname="IFramework.Hotfix.Lua.LuaEX" preserve="all"/>
 		<type fullname="IFramework.Hotfix.Lua.LuaGroups" preserve="all"/>
 		<type fullname="IFramework.Hotfix.Lua.XLuaModule" preserve="all"/>

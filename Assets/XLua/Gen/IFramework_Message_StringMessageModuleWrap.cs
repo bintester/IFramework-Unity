@@ -179,10 +179,10 @@ namespace XLua.CSObjectWrap
             
 			    int gen_param_count = LuaAPI.lua_gettop(L);
             
-                if(gen_param_count == 5&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)&& translator.Assignable<IFramework.Message.MessageUrgencyType>(L, 5)) 
+                if(gen_param_count == 5&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)&& translator.Assignable<IFramework.Message.MessageUrgencyType>(L, 5)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     int _code = LuaAPI.xlua_tointeger(L, 4);
                     IFramework.Message.MessageUrgencyType _priority;translator.Get(L, 5, out _priority);
                     
@@ -193,10 +193,10 @@ namespace XLua.CSObjectWrap
                     
                     return 1;
                 }
-                if(gen_param_count == 4&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)) 
+                if(gen_param_count == 4&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     int _code = LuaAPI.xlua_tointeger(L, 4);
                     
                         var gen_ret = gen_to_be_invoked.Publish( _type, _args, _code );
@@ -206,10 +206,10 @@ namespace XLua.CSObjectWrap
                     
                     return 1;
                 }
-                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)) 
+                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     
                         var gen_ret = gen_to_be_invoked.Publish( _type, _args );
                         translator.PushAny(L, gen_ret);
@@ -240,10 +240,10 @@ namespace XLua.CSObjectWrap
             
 			    int gen_param_count = LuaAPI.lua_gettop(L);
             
-                if(gen_param_count == 5&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 5)) 
+                if(gen_param_count == 5&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 5)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     int _code = LuaAPI.xlua_tointeger(L, 4);
                     int _priority = LuaAPI.xlua_tointeger(L, 5);
                     
@@ -254,10 +254,10 @@ namespace XLua.CSObjectWrap
                     
                     return 1;
                 }
-                if(gen_param_count == 4&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)) 
+                if(gen_param_count == 4&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)&& LuaTypes.LUA_TNUMBER == LuaAPI.lua_type(L, 4)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     int _code = LuaAPI.xlua_tointeger(L, 4);
                     
                         var gen_ret = gen_to_be_invoked.PublishByNumber( _type, _args, _code );
@@ -267,10 +267,10 @@ namespace XLua.CSObjectWrap
                     
                     return 1;
                 }
-                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.IEventArgs>(L, 3)) 
+                if(gen_param_count == 3&& (LuaAPI.lua_isnil(L, 2) || LuaAPI.lua_type(L, 2) == LuaTypes.LUA_TSTRING)&& translator.Assignable<IFramework.Message.IEventArgs>(L, 3)) 
                 {
                     string _type = LuaAPI.lua_tostring(L, 2);
-                    IFramework.IEventArgs _args = (IFramework.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.IEventArgs));
+                    IFramework.Message.IEventArgs _args = (IFramework.Message.IEventArgs)translator.GetObject(L, 3, typeof(IFramework.Message.IEventArgs));
                     
                         var gen_ret = gen_to_be_invoked.PublishByNumber( _type, _args );
                         translator.PushAny(L, gen_ret);
