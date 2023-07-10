@@ -131,6 +131,7 @@
     <Compile Include="Assets\XLua\Gen\UnityEngine_LightProbeGroupWrap.cs" />
     <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_UI_LayoutUtilityWrap.cs" />
+    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\IEventArgs.cs" />
     <Compile Include="Assets\XLua\Gen\IFramework_UI_UIEx_UIItemViewAwaiterWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_WWWFormWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_GameObjectWrap.cs" />
@@ -389,6 +390,7 @@
     <Compile Include="Assets\XLua\Gen\UnityEngine_UI_MaskableGraphicWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_CrashReportWrap.cs" />
     <Compile Include="Assets\XLua\XLua\Src\CodeEmit.cs" />
+    <Compile Include="Assets\XLua\Gen\UnityEngine_Texture3DWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_SliderJoint2DWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_AssetBundleRequestWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_UnityEventQueueSystemWrap.cs" />
@@ -403,7 +405,6 @@
     <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\GenericPriorityQueueNode.cs" />
     <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\MessageUrgency.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_StaticBatchingUtilityWrap.cs" />
-    <Compile Include="Assets\XLua\Gen\UnityEngine_Texture3DWrap.cs" />
     <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Queue\IPriorityQueue.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_GradientColorKeyWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_ParticleSystemRendererWrap.cs" />
@@ -702,11 +703,11 @@
     <Compile Include="Assets\XLua\Gen\UnityEngine_ComputeShaderWrap.cs" />
     <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Coroutine\ICoroutine.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_UI_SelectableWrap.cs" />
+    <Compile Include="Assets\XLua\Gen\UnityEngine_AudioReverbFilterWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_RayWrap.cs" />
     <Compile Include="Assets\IFramework\UI\Runtime\PanelPathCollect.cs" />
     <Compile Include="Assets\XLua\Gen\IFramework_UI_LoopExampleWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_ConfigurableJointWrap.cs" />
-    <Compile Include="Assets\XLua\Gen\UnityEngine_AudioReverbFilterWrap.cs" />
     <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Timer\Entity\InnerType.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_PhysicsSceneWrap.cs" />
     <Compile Include="Assets\XLua\Gen\UnityEngine_ScalableBufferManagerWrap.cs" />
@@ -715,7 +716,6 @@
     <Compile Include="Assets\XLua\Gen\UnityEngine_MonoBehaviourWrap.cs" />
     <Compile Include="Assets\XLua\Gen\LuaCallCsWrap.cs" />
     <Compile Include="Assets\IFramework\Core\Runtime\Singleton\MonoSingleton.cs" />
-    <Compile Include="Assets\IFramework\Core\Runtime\IFramework\Modules\Message\Message\IEventArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
