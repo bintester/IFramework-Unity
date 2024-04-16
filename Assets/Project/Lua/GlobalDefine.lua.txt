@@ -1,1 +1,0 @@
-Log.L('GlobalDefine')
