@@ -1,16 +1,21 @@
 {
-    "UIdir": "",
+    "UIdir": "Assets/IFramework/UI/Test/",
     "panel": {
-        "instanceID": 0
+        "instanceID": 14478
     },
     "state": {
         "scrollPos": {
             "x": 0.0,
             "y": 0.0
         },
-        "m_SelectedIDs": [],
-        "m_LastClickedID": 0,
-        "m_ExpandedIDs": [],
+        "m_SelectedIDs": [
+            14488
+        ],
+        "m_LastClickedID": 14488,
+        "m_ExpandedIDs": [
+            14478,
+            14488
+        ],
         "m_RenameOverlay": {
             "m_UserAcceptedRename": false,
             "m_Name": "",
@@ -32,5 +37,6 @@
             }
         },
         "m_SearchString": ""
-    }
+    },
+    "_type": 1
 }

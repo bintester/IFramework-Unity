@@ -1,7 +1,7 @@
 {
-    "UIdir": "",
+    "UIdir": "Assets/IFramework/UI/Test/",
     "panel": {
-        "instanceID": 0
+        "instanceID": 14478
     },
     "state": {
         "scrollPos": {
@@ -32,5 +32,6 @@
             }
         },
         "m_SearchString": ""
-    }
+    },
+    "_type": 3
 }
