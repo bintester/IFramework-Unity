@@ -5,7 +5,7 @@
     "enable_E": true,
     "dockWindow": true,
     "logIgnoreFiles": [
-        "Assets/IFramework/Core/Editor/EditorTools.UnityLogger.cs"
+        "Assets/IFramework/Editor/Core/EditorTools.UnityLogger.cs"
     ],
     "projectPath": "Assets/Project",
     "NameSpace": "IFramework"
