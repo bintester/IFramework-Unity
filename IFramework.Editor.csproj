@@ -71,7 +71,7 @@
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.ProjectConfigTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.FormatProjectScript.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FileField.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIMoudleWindowTab.cs" />
+    <Compile Include="Assets\IFramework\Editor\UI\UIModuleWindow.UIModuleWindowTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.Prefs.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.UserOptionTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.RectEx.cs" />

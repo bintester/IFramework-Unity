@@ -1,7 +1,7 @@
 {
-    "UIdir": "",
+    "UIdir": "Assets/Project/",
     "panel": {
-        "instanceID": 0
+        "instanceID": 17752
     },
     "state": {
         "scrollPos": {
@@ -42,5 +42,5 @@
         "m_SearchString": ""
     },
     "_searchType": 0,
-    "_type": 0
+    "_type": 2
 }
