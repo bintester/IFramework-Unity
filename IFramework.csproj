@@ -77,7 +77,6 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\UIView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\ISingleton.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Object\UIObjectView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Module.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIItemOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\IGroups.cs" />
@@ -93,7 +92,6 @@
     <Compile Include="Assets\IFramework\Runtime\UI\UIModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\GameObjectView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\ObjectPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\IEventArgs.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\ShowPanelAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Log.cs" />
@@ -104,6 +102,7 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaitable.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\Object\UIObjectHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
