@@ -103,6 +103,9 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaitable.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\EventBox.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\Prefs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
