@@ -1,3 +1,10 @@
 {
-    "datas": []
+    "datas": [
+        {
+            "path": "Assets/Project/xxx.prefab",
+            "isResourcePath": false,
+            "layer": 0,
+            "order": 0
+        }
+    ]
 }
