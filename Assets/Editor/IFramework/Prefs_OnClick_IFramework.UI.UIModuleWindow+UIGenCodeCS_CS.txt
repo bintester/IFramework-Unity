@@ -36,7 +36,7 @@
         "m_SearchString": ""
     },
     "_searchType": 0,
-    "_type": 0,
+    "_type": 1,
     "_panelNameDir": "Assets/Project/Scripts",
     "_panelNameFitDir": "Assets/Project"
 }
