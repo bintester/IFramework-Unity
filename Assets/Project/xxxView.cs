@@ -7,7 +7,7 @@
 using static IFramework.UI.UnityEventHelper;
 namespace IFramework
 {
-	public class xxxView : IFramework.UI.UIItemView 
+	public class xxxView : IFramework.UI.GameObjectView 
 	{
 //FieldsStart
 
@@ -17,12 +17,6 @@ namespace IFramework
 		//InitComponentsStart
 
 		//InitComponentsEnd
-		}
-		protected override void OnGet()
-		{
-		}
-		public override void OnSet()
-		{
 		}
 	}
 }
