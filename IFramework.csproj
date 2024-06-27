@@ -59,9 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\MvcGroups.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\ILoger.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Launcher.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\GenericPriorityQueue.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\IGenericPriorityQueueNode.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaiter.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadPanelAsyncOperation.cs" />
@@ -69,12 +69,11 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingletonPath.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\PanelPathCollect.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\Modules\IModules.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\UpdateModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\IUIDelegate.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\Singleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadItemAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\Empty4RayCast.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\UIView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\ISingleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Module.cs" />
@@ -89,23 +88,21 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemViewCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\PanelState.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\Prefs.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UnityEventHelper.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\GameObjectView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\ObjectPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\ShowPanelAsyncOperation.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Core\EventBox.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Log.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Game.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIPanel.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\IViewEventHandler.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\IAwaitable.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\EventBox.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Core\Prefs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
