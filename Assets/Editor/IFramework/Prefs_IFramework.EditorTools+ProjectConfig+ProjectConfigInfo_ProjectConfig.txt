@@ -3,6 +3,7 @@
     "enable_L": true,
     "enable_W": true,
     "enable_E": true,
+    "enable_A": true,
     "dockWindow": true,
     "logIgnoreFiles": [
         "Assets/IFramework/Editor/Core/EditorTools.UnityLogger.cs"
