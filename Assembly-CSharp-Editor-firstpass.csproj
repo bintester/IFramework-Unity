@@ -10,10 +10,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{677DAB29-C25B-4106-9822-E208FE7F85DE}</ProjectGuid>
+    <ProjectGuid>{2052FBD2-3286-F088-83F1-BDE797D04F36}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>IFramework.Editor</AssemblyName>
+    <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -27,7 +27,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -36,7 +36,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -50,7 +50,7 @@
     <UnityProjectGenerator>Package</UnityProjectGenerator>
     <UnityProjectGeneratorVersion>2.0.22</UnityProjectGeneratorVersion>
     <UnityProjectGeneratorStyle>Legacy</UnityProjectGeneratorStyle>
-    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityProjectType>EditorPlugins:7</UnityProjectType>
     <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
     <UnityVersion>2021.3.33f1c1</UnityVersion>
   </PropertyGroup>
@@ -58,50 +58,39 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIGenCode.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.MenuTree.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.MenuTree.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\GUI\GUIStyles.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIGenCodeCS.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.ProjectConfigTab.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.FormatProjectScript.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\GUI\FileField.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIModuleWindow.UIModuleWindowTab.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.Prefs.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.UserOptionTab.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.RectEx.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\GUI\SplitView.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\ScriptCreatorFieldsDrawer.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UILayerEdit.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.ProjectConfig.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.DragAndDropTool.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.WindowCollection.cs" />
-    <Compile Include="Assets\IFramework\Editor\UI\ScriptCreator.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.UnityLogger.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\GUI\FolderField.cs" />
-    <Compile Include="Assets\IFramework\Editor\Core\EditorTools.EditorWindowTool.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationComponentEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationWindow.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationSetting.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationObjectEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationActorAttribute.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\ILocalizationActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\LocalizationActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextValueActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextColorActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationTextEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationImageEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\ImageSpriteActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\LocalizationMapActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextFontActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextFontSizeActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\ImageColorActorEditor.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Spreadsheet_Google.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Warnings.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Terms_Description.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Scenes.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Categorize.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LanguageSourceAssetInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LocalizationEditor.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_NoLocalized.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\EditorTools.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\PostProcessBuild_ANDROID.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\UpgradeManager.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_CharSet.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_ParseTerms.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LocalizeDropdownInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\PostProcessBuild_UnloadLanguages.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\PostProcessBuild_IOS.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Spreadsheet_Local.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LocalizationParamsManagerInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\SetLanguageInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Terms.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Languages.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\TermsPopup_Drawer.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\ResourceManagerInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LocalizeInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Inspectors\LanguageSourceInspector.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_MergeTerms.cs" />
+    <Compile Include="Assets\Plugins\Localization\Scripts\Editor\Localization\LocalizationEditor_Tools_Script.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\IFramework\Editor\IFramework.Editor.asmdef" />
+    <None Include="Assets\Plugins\Localization\Scripts\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll" />
+    <None Include="Assets\Plugins\Localization\Scripts\Editor\Unity XCode\Xcode.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -458,6 +447,10 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>E:\Program\unity\Editor\2021.3.33f1c1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.iOS_I2Loc.Xcode">
+      <HintPath>Assets\Plugins\Localization\Scripts\Editor\Unity XCode\UnityEditor.iOS_I2Loc.Xcode.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="nunit.framework">
@@ -972,14 +965,6 @@
       <HintPath>E:\Program\unity\Editor\2021.3.33f1c1\Editor\Data\UnityReferenceAssemblies\unity-4.8-api\Facades\System.Xml.XPath.XDocument.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
       <Private>False</Private>
@@ -988,11 +973,39 @@
       <HintPath>Library\ScriptAssemblies\UnityEditor.TestRunner.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{D244A2FD-D457-BCAD-6872-E2D5FDC7D86B}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="IFramework.csproj">
       <Project>{1E2BC948-76D1-EB32-D16B-A5EF8243F6BF}</Project>
       <Name>IFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="IFramework.Editor.csproj">
+      <Project>{677DAB29-C25B-4106-9822-E208FE7F85DE}</Project>
+      <Name>IFramework.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

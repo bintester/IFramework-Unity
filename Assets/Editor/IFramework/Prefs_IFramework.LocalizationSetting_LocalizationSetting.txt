@@ -1,0 +1,6 @@
+{
+    "localizationType": "CN",
+    "defaultObject": {
+        "instanceID": -89874
+    }
+}

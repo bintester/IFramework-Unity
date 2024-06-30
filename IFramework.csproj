@@ -103,6 +103,23 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Localization.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationComponent.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationObject.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationPref.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationPrefRecorder.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ILocalizationActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\MixedRecorder.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextColorActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationText.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextValueActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ImageSpriteActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationImage.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextFontActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextFontSizeActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ImageColorActor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
