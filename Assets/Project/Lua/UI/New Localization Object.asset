@@ -16,4 +16,6 @@ MonoBehaviour:
     list:
     - Key: CN
       Value:
-        list: []
+        list:
+        - Key: xx
+          Value: "\u563F\u563F"

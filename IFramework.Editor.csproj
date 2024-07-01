@@ -61,7 +61,7 @@
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIGenCode.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextFontActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.MenuTree.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationComponentEditor.cs" />
+    <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationBehaviorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.MenuTree.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\GUIStyles.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIGenCodeCS.cs" />

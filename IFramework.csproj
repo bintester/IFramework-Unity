@@ -70,7 +70,6 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ImageSpriteActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaiter.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadPanelAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationComponent.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemView.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingletonPath.cs" />
@@ -121,6 +120,7 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\GraphicColorActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationGraphic.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\GraphicMaterialActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationBehavior.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
