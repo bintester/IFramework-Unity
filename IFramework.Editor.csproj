@@ -71,7 +71,7 @@
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.ProjectConfigTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.FormatProjectScript.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextValueActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationObjectEditor.cs" />
+    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationDataEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\ILocalizationActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationActorAttribute.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FileField.cs" />

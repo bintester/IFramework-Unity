@@ -61,7 +61,7 @@
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\MvcGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Launcher.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextValueActor.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationObject.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationData.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextFontActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\GenericPriorityQueue.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
