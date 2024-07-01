@@ -73,7 +73,7 @@
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextValueActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationDataEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\ILocalizationActorEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationActorAttribute.cs" />
+    <Compile Include="Assets\IFramework\Editor\Localization\LocalizationActorEditorAttribute.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FileField.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIModuleWindow.UIModuleWindowTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.Prefs.cs" />
