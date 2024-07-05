@@ -1,0 +1,4 @@
+{
+    "_lastCSVPath": "E:/Project/Unity/IFramework-Unity/Assets/XLua/New Localization Data.csv",
+    "_lastLocalizationDataPath": "Assets"
+}

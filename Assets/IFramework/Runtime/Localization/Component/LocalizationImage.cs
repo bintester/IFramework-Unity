@@ -5,11 +5,13 @@
  *Date:           2024-04-25
 *********************************************************************************/
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace IFramework.Localization
 {
     [UnityEngine.RequireComponent(typeof(UnityEngine.UI.Image))]
-
+    [DisallowMultipleComponent]
+    [AddComponentMenu("IFramework/LocalizationImage")]
     public class LocalizationImage : LocalizationGraphic<UnityEngine.UI.Image>
     {
         public ImageSpriteActor sprite = new ImageSpriteActor();

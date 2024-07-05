@@ -12,7 +12,7 @@ namespace IFramework.Localization
 {
 
     [LocalizationActorEditorAttribute]
-    class GraphicColorActorEditor : LocalizationMapActorEditor<GraphicColorActor, Color>
+    class GraphicColorActorEditor : LocalizationMapActorEditor<GraphicColorActor, Color, LocalizationGraphic>
     {
         protected override Color Draw(string lan, Color value)
         {
@@ -23,11 +23,5 @@ namespace IFramework.Localization
         {
             return Color.white;
         }
-
-        protected override SerializableDictionary<string, Color> GetMap(GraphicColorActor context)
-        {
-            return context.colors;
-        }
-
     }
 }
