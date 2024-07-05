@@ -84,6 +84,7 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationPref.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\Singleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadItemAsyncOperation.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\ScriptCreatorContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationImage.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\UIView.cs" />

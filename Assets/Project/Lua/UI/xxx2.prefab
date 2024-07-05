@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 2071197535641513948}
   - component: {fileID: 6899890163554450578}
   - component: {fileID: 2797483030530869587}
-  - component: {fileID: -4671080031119058300}
+  - component: {fileID: -5532354492966752251}
+  - component: {fileID: -9079078632270164400}
   m_Layer: 5
   m_Name: xxx2
   m_TagString: Untagged
@@ -91,7 +92,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66b9abbb23fdd2140adb592f9d23bc1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-4671080031119058300
+--- !u!114 &-5532354492966752251
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,7 +105,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fieldName: xxx2
-  fieldType: UnityEngine.UI.Image
+  fieldType: UnityEngine.CanvasRenderer
+--- !u!114 &-9079078632270164400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3772545300055814653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83247599dd1defd4dbd7f76bc2bb8b4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  includeChildPrefab: 1
+  ignoreChildPrefabs:
+  - xxx2/xxx/Image@sm
 --- !u!1001 &9196245620986233725
 PrefabInstance:
   m_ObjectHideFlags: 0

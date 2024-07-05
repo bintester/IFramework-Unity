@@ -1,18 +1,21 @@
 {
     "GenPath": "Assets/Project/",
     "panelPath": "Assets/Project/Lua/UI/xxx2.prefab",
-    "includeChildPrefab": true,
     "state": {
         "scrollPos": {
             "x": 0.0,
             "y": 0.0
         },
         "m_SelectedIDs": [
-            20258
+            18466
         ],
-        "m_LastClickedID": 20258,
+        "m_LastClickedID": 18466,
         "m_ExpandedIDs": [
-            17902
+            17902,
+            17908,
+            18418,
+            18450,
+            20258
         ],
         "m_RenameOverlay": {
             "m_UserAcceptedRename": false,

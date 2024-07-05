@@ -11,14 +11,12 @@ namespace IFramework
 	{
 //FieldsStart
 		private UnityEngine.CanvasRenderer xxx2;
-		private UnityEngine.GameObject xxx;
 
 //FieldsEnd
 		protected override void InitComponents()
 		{
 		//InitComponentsStart
 			xxx2 = transform.GetComponent<UnityEngine.CanvasRenderer>();
-			xxx = transform.Find("xxx").gameObject;
 
 		//InitComponentsEnd
 		}
