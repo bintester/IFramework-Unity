@@ -10,15 +10,17 @@ namespace IFramework
 	public class xxx2View : IFramework.UI.MVC.UIView 
 	{
 //FieldsStart
-		private UnityEngine.GameObject heihei_0;
-		private UnityEngine.GameObject heihei_1;
+		private UnityEngine.CanvasRenderer xxx0;
+		private UnityEngine.GameObject heihei;
+		private UnityEngine.CanvasRenderer Image;
 
 //FieldsEnd
 		protected override void InitComponents()
 		{
 		//InitComponentsStart
-			heihei_0 = transform.Find("heihei_0@sm").gameObject;
-			heihei_1 = transform.Find("heihei_1@sm").gameObject;
+			xxx0 = transform.Find("xxx0").GetComponent<UnityEngine.CanvasRenderer>();
+			heihei = transform.Find("heihei@sm").gameObject;
+			Image = transform.Find("xxx/Image@sm").GetComponent<UnityEngine.CanvasRenderer>();
 
 		//InitComponentsEnd
 		}

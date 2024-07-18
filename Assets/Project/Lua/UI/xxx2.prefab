@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8847796015552397053}
   - component: {fileID: 4981101328366781966}
   m_Layer: 5
-  m_Name: heihei@sm
+  m_Name: heihei_0@sm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -182,20 +182,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83247599dd1defd4dbd7f76bc2bb8b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  containsChildren: 1
-  ignorePaths:
-  - xxx2/xxx0
-  - xxx2/xxx
+  executeSubContext: 0
+  ignore: []
   marks:
-  - gameObject: {fileID: 3772545300055814653}
-    fieldName: xxx2
+  - gameObject: {fileID: 766784040680035372}
+    fieldName: xxx0
     fieldType: UnityEngine.CanvasRenderer
+  - gameObject: {fileID: 3000013847520512092}
+    fieldName: heihei
+    fieldType: UnityEngine.RectTransform
   - gameObject: {fileID: 390944646971351285}
     fieldName: heihei_0
-    fieldType: UnityEngine.UI.Image
+    fieldType: UnityEngine.GameObject
   - gameObject: {fileID: 7044966940832262912}
     fieldName: heihei_1
-    fieldType: UnityEngine.UI.Image
+    fieldType: UnityEngine.GameObject
 --- !u!1 &7044966940832262912
 GameObject:
   m_ObjectHideFlags: 0
@@ -279,6 +280,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8461761233730228345}
     m_Modifications:
+    - target: {fileID: 1683465830030896525, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+      propertyPath: m_Name
+      value: heihei
+      objectReference: {fileID: 0}
     - target: {fileID: 3772545300055814653, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
       propertyPath: m_Name
       value: xxx0
@@ -369,6 +374,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+--- !u!1 &766784040680035372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3772545300055814653, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+  m_PrefabInstance: {fileID: 4539329304894989777}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3000013847520512092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1683465830030896525, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+  m_PrefabInstance: {fileID: 4539329304894989777}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5445090482015188392 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8461761233730228345, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
