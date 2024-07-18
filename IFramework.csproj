@@ -98,7 +98,6 @@
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ObjectActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\ScriptMark.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\PrefabActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
