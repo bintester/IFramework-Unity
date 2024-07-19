@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4964977719232680668
 RectTransform:
   m_ObjectHideFlags: 0
@@ -182,11 +182,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83247599dd1defd4dbd7f76bc2bb8b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  executeSubContext: 0
-  ignore: []
+  executeSubContext: 1
+  ignore:
+  - {fileID: 6663678590769793138}
   marks:
   - gameObject: {fileID: 766784040680035372}
-    fieldName: xxx0
+    fieldName: xxx0dsagdiashd
     fieldType: UnityEngine.CanvasRenderer
   - gameObject: {fileID: 3000013847520512092}
     fieldName: heihei
@@ -195,7 +196,7 @@ MonoBehaviour:
     fieldName: heihei_0
     fieldType: UnityEngine.GameObject
   - gameObject: {fileID: 7044966940832262912}
-    fieldName: heihei_1
+    fieldName: _1heihei_1sm
     fieldType: UnityEngine.GameObject
 --- !u!1 &7044966940832262912
 GameObject:
@@ -214,7 +215,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4999083722893005391
 RectTransform:
   m_ObjectHideFlags: 0
@@ -287,6 +288,18 @@ PrefabInstance:
     - target: {fileID: 3772545300055814653, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
       propertyPath: m_Name
       value: xxx0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899890163554450578, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899890163554450578, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+      propertyPath: m_Color.g
+      value: 0.741577
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899890163554450578, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
+      propertyPath: m_Color.r
+      value: 0.16509432
       objectReference: {fileID: 0}
     - target: {fileID: 8461761233730228345, guid: cae76087e1dbec14aba4c1cec3f560fd, type: 3}
       propertyPath: m_Pivot.x
@@ -400,6 +413,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: xxx
       objectReference: {fileID: 0}
+    - target: {fileID: 3772545300055814653, guid: 2cd13f83d87b51f419e7bb90a374dda3, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8461761233730228345, guid: 2cd13f83d87b51f419e7bb90a374dda3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -489,5 +506,10 @@ PrefabInstance:
 --- !u!224 &2111861307198777846 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8461761233730228345, guid: 2cd13f83d87b51f419e7bb90a374dda3, type: 3}
+  m_PrefabInstance: {fileID: 7503245095312882063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6663678590769793138 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3772545300055814653, guid: 2cd13f83d87b51f419e7bb90a374dda3, type: 3}
   m_PrefabInstance: {fileID: 7503245095312882063}
   m_PrefabAsset: {fileID: 0}

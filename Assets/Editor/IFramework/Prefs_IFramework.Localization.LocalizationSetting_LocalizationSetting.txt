@@ -1,5 +1,5 @@
 {
-    "_localizationType": "CN",
+    "_localizationType": "EN",
     "_defaultData": "Assets/Project/Lua/UI/New Localization Data.asset",
     "_lineReg": "\"",
     "_fieldReg": "\\G(?:^|,)(?:\"((?>[^\"]*)(?>\"\"[^\"]*)*)\"|([^\",]*))",
