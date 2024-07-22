@@ -58,71 +58,35 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\XLua\XLua\Src\ObjectTranslatorPool.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaTable.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaDLL.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\GenAttributes.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaFunction.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
     <Compile Include="Assets\Project\xxx2View.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectCasters.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\SignatureLoader.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\Utils.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\TypeExtensions.cs" />
     <Compile Include="Assets\Project\Scripts\NewBehaviourScript.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\RawObject.cs" />
     <Compile Include="Assets\Project\xxxView.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectTranslator.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\TemplateEngine\TemplateEngine.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaEnv.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\MethodWarpsCache.cs" />
     <Compile Include="Assets\Project\Lua\PanelNames.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\CodeEmit.cs" />
     <Compile Include="Assets\Project\Lua\UI\cineTest.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\ObjectPool.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaException.cs" />
     <Compile Include="Assets\Project\Scripts\PanelNamesxx.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\DelegateBridge.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\GenericDelegateBridge.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\CopyByValue.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\StaticLuaCallbacks.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\LuaBase.cs" />
-    <Compile Include="Assets\XLua\XLua\Src\InternalGlobals.cs" />
-    <Compile Include="Assets\XLua\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
     <Compile Include="Assets\Localization\LocalizationTMP_Text.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\XLua\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-    <None Include="Assets\XLua\XLua\Resources\xlua\util.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-    <None Include="Assets\XLua\Plugins\x86_64\xlua.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-    <None Include="Assets\XLua\XLua\Resources\perf\profiler.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-    <None Include="Assets\XLua\Plugins\x86\xlua.dll" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-    <None Include="Assets\XLua\XLua\Resources\perf\memory.lua.txt" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\Project\Lua\GameLogic.lua.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-    <None Include="Assets\XLua\XLua\Resources\tdr\tdr.lua.txt" />
-    <None Include="Assets\XLua\XLua\CHANGELOG.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
@@ -897,13 +861,13 @@
       <Project>{C515CCB2-157A-B6C0-0DE2-854358B6EF78}</Project>
       <Name>IFramework.Player</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.UI.Player.csproj">
-      <Project>{814D5A06-A659-278B-48EC-4D99719E650D}</Project>
-      <Name>UnityEngine.UI.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Player.csproj">
       <Project>{2FE3F80E-BEAA-0A46-230E-ACB49C2C00C2}</Project>
       <Name>Unity.TextMeshPro.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{814D5A06-A659-278B-48EC-4D99719E650D}</Project>
+      <Name>UnityEngine.UI.Player</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

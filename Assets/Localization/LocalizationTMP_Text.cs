@@ -23,11 +23,22 @@ namespace IFramework.Localization
             private string _lastKey;
             public string[] formatArgs = new string[0];
 
+            public TMPTextActor(bool enable) : base(enable)
+            {
+            }
+
             protected override void Execute(string localizationType, LocalizationTMP_Text component)
             {
                 _lastKey = key;
                 var format = component.GetLocalization(key);
-                component.graphicT.text = string.Format(format, formatArgs);
+                try
+                {
+                    component.graphicT.text = string.Format(format, formatArgs);
+                }
+                catch (System.Exception)
+                {
+                    throw;
+                }
             }
             public void SetKey(string key)
             {
@@ -49,6 +60,10 @@ namespace IFramework.Localization
         [System.Serializable]
         public class TMPFontActor : LocalizationMapActor<LocalizationTMP_Text, TMP_FontAsset>
         {
+            public TMPFontActor(bool enable) : base(enable)
+            {
+            }
+
             protected override void Execute(string localizationType, LocalizationTMP_Text component)
             {
                 component.graphicT.font = GetValue(localizationType);
@@ -58,14 +73,18 @@ namespace IFramework.Localization
         [System.Serializable]
         public class TMPFontSizeActor : LocalizationMapActor<LocalizationTMP_Text, float>
         {
+            public TMPFontSizeActor(bool enable) : base(enable)
+            {
+            }
+
             protected override void Execute(string localizationType, LocalizationTMP_Text component)
             {
                 component.graphicT.fontSize = GetValue(localizationType);
             }
         }
-        public TMPTextActor text = new TMPTextActor();
-        public TMPFontActor font = new TMPFontActor();
-        public TMPFontSizeActor fontSize = new TMPFontSizeActor();
+        public TMPTextActor text = new TMPTextActor(true);
+        public TMPFontActor font = new TMPFontActor(false);
+        public TMPFontSizeActor fontSize = new TMPFontSizeActor(false);
 
 
         protected override List<ILocalizationActor> GetActors()

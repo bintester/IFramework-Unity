@@ -99,8 +99,8 @@
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineSmoothPathEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineVirtualCameraEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineBrainEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineComposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineMixingCameraEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineComposerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\InspectorUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Editors\CinemachineConfinerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.cinemachine@2.8.9\Editor\Utility\ReflectionHelpers.cs" />

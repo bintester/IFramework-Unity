@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Project/Lua/UI/New Scene.unity
+    guid: 42eb267e448e50942a7a949f205840dd
   m_configObjects: {}
