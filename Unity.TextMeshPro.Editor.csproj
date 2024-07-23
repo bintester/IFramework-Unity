@@ -83,8 +83,8 @@
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_SubMeshUI_Editor.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_SpriteAssetEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_GlyphPairAdjustmentRecordPropertyDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_PreBuildProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_MeshRendererEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_PreBuildProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_SpriteAssetMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMP_EditorCoroutine.cs" />
     <Compile Include="Library\PackageCache\com.unity.textmeshpro@3.0.9\Scripts\Editor\TMPro_ContextMenus.cs" />

@@ -853,10 +853,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="Cinemachine.Player.csproj">
-      <Project>{75A3D676-240B-892F-EA7C-FAECBB39F6A8}</Project>
-      <Name>Cinemachine.Player</Name>
-    </ProjectReference>
     <ProjectReference Include="IFramework.Player.csproj">
       <Project>{C515CCB2-157A-B6C0-0DE2-854358B6EF78}</Project>
       <Name>IFramework.Player</Name>

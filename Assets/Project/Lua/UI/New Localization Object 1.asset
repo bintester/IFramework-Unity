@@ -12,22 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6632ecebdeabf2a43a189d064c61ee43, type: 3}
   m_Name: New Localization Object 1
   m_EditorClassIdentifier: 
-  map_reflect:
+  map:
     list:
     - Key: CN
       Value:
         list:
-        - Key: 0
+        - Key: xx
           Value: "\u563F\u563F"
-        - Key: 1
-          Value: "\u560E\u560E"
     - Key: EN
       Value:
         list:
-        - Key: 0
+        - Key: xx
           Value: heyhey
-        - Key: 1
-          Value: gaga
   keys:
   - xx
-  - ss
