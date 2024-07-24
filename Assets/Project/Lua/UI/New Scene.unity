@@ -523,7 +523,7 @@ MonoBehaviour:
     _enable: 1
     _name: 
     _canRemove: 0
-    key: 766
+    key: xx
     formatArgs:
     - newArg
   font:
@@ -579,7 +579,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 766
+  m_Text: "\u563F\u563F"
 --- !u!222 &585011017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -843,13 +843,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   context: {fileID: 11400000, guid: 4556ba44511618b42b91763d71586a66, type: 2}
   color:
-    _enable: 0
+    _enable: 1
     _name: 
     _canRemove: 0
     map:
       list:
       - Key: CN
-        Value: {r: 1, g: 1, b: 1, a: 1}
+        Value: {r: 1, g: 0, b: 0, a: 1}
       - Key: EN
         Value: {r: 1, g: 1, b: 1, a: 1}
   material:
@@ -883,7 +883,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
