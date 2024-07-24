@@ -61,16 +61,13 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationPrefab.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\MvcGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Launcher.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextValueActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationData.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextFontActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\GenericPriorityQueue.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationBehavior.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\IGenericPriorityQueueNode.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationGraphic.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationActor.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ImageSpriteActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaiter.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadPanelAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationMapActor.cs" />
@@ -94,14 +91,10 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Group\IGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MixedGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\ModulePriority.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\GraphicColorActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\ObjectActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\PrefabActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\TextFontSizeActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemViewCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\PanelState.cs" />
@@ -125,7 +118,6 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Localization\Actor\GraphicMaterialActor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />

@@ -26,10 +26,10 @@ MonoBehaviour:
     - Key: EN
       Value:
         list:
-        - Key: xx
-          Value: Hey hey
         - Key: ss
           Value: quack
+        - Key: xx
+          Value: Hey hey
         - Key: yyy
           Value: My {0}
   keys:

@@ -5,7 +5,6 @@
  *Date:           2024-04-25
 *********************************************************************************/
 #if UNITY_EDITOR
-using TMPro;
 using UnityEditor;
 using UnityEngine;
 namespace IFramework.Localization
@@ -81,7 +80,6 @@ namespace IFramework.Localization
             protected override void OnGUI(LocalizationBehavior component, LocalizationTMP_Text.TMPTextActor context)
             {
                 var lan = Localization.GetLocalizationType();
-                EditorGUILayout.LabelField(nameof(Localization), lan);
                 var __mode = (Mode)EditorGUILayout.EnumPopup(nameof(Mode), _mode);
                 if (__mode != _mode)
                 {
@@ -209,22 +207,12 @@ namespace IFramework.Localization
         class TextFontActorEditor : LocalizationMapActorEditor<LocalizationTMP_Text.TMPFontActor, TMPro.TMP_FontAsset, LocalizationTMP_Text>
         {
             protected override TMPro.TMP_FontAsset Draw(string lan, TMPro.TMP_FontAsset value) => EditorGUILayout.ObjectField(lan, value, typeof(TMPro.TMP_FontAsset), false) as TMPro.TMP_FontAsset;
-
-            protected override TMPro.TMP_FontAsset GetDefault()
-            {
-                if (TMP_Settings.instance != null)
-                    return TMP_Settings.defaultFontAsset;
-                return null;
-            }
-
-
         }
 
         [LocalizationActorEditorAttribute]
         class TMPFontSizeActorEditor : LocalizationMapActorEditor<LocalizationTMP_Text.TMPFontSizeActor, float, LocalizationTMP_Text>
         {
             protected override float Draw(string lan, float value) => EditorGUILayout.FloatField(lan, value);
-            protected override float GetDefault() => 36;
         }
     }
 }

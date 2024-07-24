@@ -77,6 +77,13 @@ namespace IFramework.Localization
             {
             }
 
+            public override TMP_FontAsset GetDefault()
+            {
+                if (TMP_Settings.instance != null)
+                    return TMP_Settings.defaultFontAsset;
+                return null;
+            }
+
             protected override void Execute(string localizationType, LocalizationTMP_Text component)
             {
                 component.graphicT.font = GetValue(localizationType);
@@ -88,6 +95,11 @@ namespace IFramework.Localization
         {
             public TMPFontSizeActor(bool enable) : base(enable)
             {
+            }
+
+            public override float GetDefault()
+            {
+                return 36;
             }
 
             protected override void Execute(string localizationType, LocalizationTMP_Text component)

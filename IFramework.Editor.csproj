@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UIGenCode.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextFontActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.MenuTree.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationBehaviorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.MenuTree.cs" />
@@ -71,31 +70,25 @@
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.ProjectConfigTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.FormatProjectScript.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationEditorUserData.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextValueActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationDataEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\ILocalizationActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationActorEditorAttribute.cs" />
+    <Compile Include="Assets\IFramework\Editor\Localization\YouDao.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FileField.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\ObjectActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIModuleWindow.UIModuleWindowTab.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.Prefs.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.UserOptionTab.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\GraphicColorActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\Empty4RaycastEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.RectEx.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\LocalizationMapActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\GUI\SplitView.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\ImageSpriteActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\ScriptCreatorFieldsDrawer.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationPrefabEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationWindow.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\PrefabActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\UI\UIMoudleWindow.UILayerEdit.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\GraphicMaterialActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationGraphicEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\Actor\TextFontSizeActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\CSVHelper.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.ProjectConfig.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.DragAndDropTool.cs" />
@@ -107,7 +100,6 @@
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FolderField.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.EditorWindowTool.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationTextEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\Localization\YouDao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Editor\IFramework.Editor.asmdef" />
