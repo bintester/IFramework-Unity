@@ -20,14 +20,19 @@ MonoBehaviour:
         - Key: xx
           Value: "\u563F\u563F"
         - Key: ss
-          Value: "\u560E\u560E"
+          Value: "\u5EB8\u533B"
+        - Key: yyy
+          Value: "\u6211\u7684{0}"
     - Key: EN
       Value:
         list:
         - Key: xx
-          Value: heyhey
+          Value: Hey hey
         - Key: ss
-          Value: gaga
+          Value: quack
+        - Key: yyy
+          Value: My {0}
   keys:
   - xx
   - ss
+  - yyy

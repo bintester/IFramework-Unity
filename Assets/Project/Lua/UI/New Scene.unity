@@ -522,7 +522,7 @@ MonoBehaviour:
     _enable: 1
     _name: 
     _canRemove: 0
-    key: dd
+    key: 766
     formatArgs:
     - newArg
   font:
@@ -578,7 +578,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: kknewArgzz
+  m_Text: 766
 --- !u!222 &585011017
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -990,7 +990,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: kknewArgzz
+  m_text: heyhey
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1098,8 +1098,9 @@ MonoBehaviour:
     _enable: 1
     _name: 
     _canRemove: 0
-    key: dd
+    key: xx
     formatArgs:
+    - newArg
     - newArg
   font:
     _enable: 0
