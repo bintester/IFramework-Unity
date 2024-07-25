@@ -118,9 +118,9 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\Tree.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedTree.cs" />
     <Compile Include="Assets\IFramework\Runtime\RedPoint\RedDot.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedPoint.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\InternalRedPoint.cs" />
     <Compile Include="Assets\IFramework\Runtime\RedPoint\RedActiveDot.cs" />
   </ItemGroup>
   <ItemGroup>
