@@ -68,6 +68,7 @@
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationSetting.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Actor\LocalizationActorEditor.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\RootWindow\RootWindow.ProjectConfigTab.cs" />
+    <Compile Include="Assets\IFramework\Editor\RedPoint\RedPointWindow.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.FormatProjectScript.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationEditorUserData.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\LocalizationDataEditor.cs" />
@@ -100,7 +101,6 @@
     <Compile Include="Assets\IFramework\Editor\Core\GUI\FolderField.cs" />
     <Compile Include="Assets\IFramework\Editor\Core\EditorTools.EditorWindowTool.cs" />
     <Compile Include="Assets\IFramework\Editor\Localization\Component\LocalizationTextEditor.cs" />
-    <Compile Include="Assets\IFramework\Editor\RedPoint\RedPointWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Editor\IFramework.Editor.asmdef" />

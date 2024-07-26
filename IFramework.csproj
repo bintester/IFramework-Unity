@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationPrefab.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\MvcGroups.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedActiveDot.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Launcher.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationData.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\GenericPriorityQueue.cs" />
@@ -86,7 +87,9 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\MVC\UIView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\ISingleton.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedTree.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Module.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\InternalRedPoint.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIItemOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\IGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MixedGroups.cs" />
@@ -103,6 +106,7 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationText.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Localization.cs" />
+    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedDot.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\GameObjectView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationPrefRecorder.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\ObjectPool.cs" />
@@ -118,10 +122,6 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedTree.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedDot.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\InternalRedPoint.cs" />
-    <Compile Include="Assets\IFramework\Runtime\RedPoint\RedActiveDot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
