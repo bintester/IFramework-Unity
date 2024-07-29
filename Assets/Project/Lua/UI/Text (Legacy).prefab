@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 294185015696063559}
   - component: {fileID: 294185015696063556}
   - component: {fileID: 294185015696063557}
-  - component: {fileID: 294185015696063554}
   - component: {fileID: -8635915848834453912}
   m_Layer: 5
   m_Name: Text (Legacy)
@@ -132,20 +131,6 @@ MonoBehaviour:
     _canRemove: 0
     map:
       list: []
---- !u!114 &294185015696063554
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 294185015696063552}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77246336d48a5b3499c7be4bd24c4514, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LocalizationText: {fileID: 294185015696063557}
-  index: 0
 --- !u!114 &-8635915848834453912
 MonoBehaviour:
   m_ObjectHideFlags: 0

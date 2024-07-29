@@ -4,18 +4,21 @@
             "path": "Assets/Project/Lua/UI/xxx2.prefab",
             "isResourcePath": false,
             "layer": 0,
-            "order": 0
-        },
-        {
-            "path": "Assets/Project/Lua/UI/xxx.prefab",
-            "isResourcePath": false,
-            "layer": 0,
+            "hideScene": false,
             "order": 0
         },
         {
             "path": "Assets/Project/Lua/UI/xxx0.prefab",
             "isResourcePath": false,
             "layer": 0,
+            "hideScene": false,
+            "order": 0
+        },
+        {
+            "path": "Assets/Project/Lua/UI/xxx.prefab",
+            "isResourcePath": false,
+            "layer": 0,
+            "hideScene": false,
             "order": 0
         }
     ]

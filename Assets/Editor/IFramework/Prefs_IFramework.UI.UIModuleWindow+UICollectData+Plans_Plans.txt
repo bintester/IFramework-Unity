@@ -2,20 +2,13 @@
     "index": 0,
     "plans": [
         {
-            "GenPath": "Assets/Project/Lua",
-            "CollectPath": "Assets/Project/Lua",
-            "ScriptGenPath": "Assets/Project/Lua",
-            "ScriptName": "PanelNames",
-            "name": "24_06_27_10_19_48",
-            "typeIndex": 0
-        },
-        {
-            "GenPath": "Assets/Project/Configs",
-            "CollectPath": "Assets/Project",
+            "ConfigGenPath": "Assets/Project/Configs",
+            "PanelCollectPath": "Assets/Project",
             "ScriptGenPath": "Assets/Project/Scripts",
-            "ScriptName": "PanelNamesxx",
-            "name": "24_06_27_10_49_47",
-            "typeIndex": 0
+            "ScriptName": "PanelNames",
+            "name": "24_07_28_09_06_15",
+            "typeIndex": 0,
+            "ConfigName": "UICollect"
         }
     ]
 }

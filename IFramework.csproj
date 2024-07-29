@@ -75,7 +75,6 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemView.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingletonPath.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\PanelPathCollect.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\UpdateModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\MixedRecorder.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\IUIDelegate.cs" />
@@ -95,6 +94,7 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MixedGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\ModulePriority.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\PanelCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
