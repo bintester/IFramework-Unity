@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationPrefab.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\MVC\MvcGroups.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\Group\MvcGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\RedPoint\RedActiveDot.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Launcher.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationData.cs" />
@@ -70,21 +70,19 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationGraphic.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaiter.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadPanelAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationMapActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemView.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsset.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\UIAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingletonPath.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\UpdateModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\MixedRecorder.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\IUIDelegate.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationPref.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\Singleton.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Load\LoadItemAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\ScriptCreatorContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationImage.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\MVC\UIView.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\UIView.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\ISingleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\RedPoint\RedTree.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Module.cs" />
@@ -94,13 +92,12 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MixedGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\ModulePriority.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\PanelCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\PanelCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemViewCollection.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Load\UIAsyncOperation.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\PanelState.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\UIAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Prefs.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UnityEventHelper.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationText.cs" />
@@ -111,7 +108,6 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationPrefRecorder.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\ObjectPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingleton.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Load\ShowPanelAsyncOperation.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\EventBox.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Log.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationAssets.cs" />
@@ -122,6 +118,7 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\Recorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
@@ -971,16 +968,16 @@
       <HintPath>E:\Program\unity\Editor\2021.3.33f1c1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEditor.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{60F2598A-B426-ADB3-4E9F-84F3DB21B75D}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{7C902462-9E4E-7533-B6D8-A31566990142}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

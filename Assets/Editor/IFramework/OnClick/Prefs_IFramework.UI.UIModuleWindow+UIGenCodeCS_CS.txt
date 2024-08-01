@@ -1,19 +1,22 @@
 {
-    "GenPath": "Assets/Project/",
-    "panelPath": "Assets/Project/Lua/UI/xxx2.prefab",
+    "GenPath": "Assets/Project/Examples/UI/",
+    "panelPath": "Assets/Project/Examples/UI/PanelOneItem.prefab",
     "state": {
         "scrollPos": {
             "x": 0.0,
             "y": 0.0
         },
         "m_SelectedIDs": [
-            18460
+            22016
         ],
-        "m_LastClickedID": 18460,
+        "m_LastClickedID": 22016,
         "m_ExpandedIDs": [
             17902,
             17908,
             17920,
+            17934,
+            17990,
+            17992,
             18016,
             18030,
             18032,
@@ -36,6 +39,8 @@
             18692,
             18800,
             18806,
+            19296,
+            19930,
             20258
         ],
         "m_RenameOverlay": {
@@ -55,11 +60,11 @@
             "m_OriginalEventType": 0,
             "m_IsRenamingFilename": false,
             "m_ClientGUIView": {
-                "instanceID": -1552
+                "instanceID": 0
             }
         },
         "m_SearchString": ""
     },
     "_searchType": 0,
-    "_type": 2
+    "_type": 0
 }
