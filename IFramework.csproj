@@ -119,6 +119,11 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\Record\Recorder.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\CommandGroupState.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\BaseState.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\IRecorderActor.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\OperationRecorderEx.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Record\CommandState.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
