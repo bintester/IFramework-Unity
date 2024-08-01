@@ -31,17 +31,20 @@ namespace IFramework.Localization
             {
                 GUILayout.BeginVertical(EditorStyles.helpBox);
                 OnGUI(component, context);
-
-                if (GUILayout.Button("Execute", GUILayout.Height(30)))
-                {
-                    context.Execute();
-                    SetDirty(component);
-
-                }
+                if (NeedExecute())
+                    if (GUILayout.Button("Execute", GUILayout.Height(30)))
+                    {
+                        context.Execute();
+                        SetDirty(component);
+                    }
                 GUILayout.EndVertical();
             }
             GUI.enabled = true;
 
+        }
+        protected virtual bool NeedExecute()
+        {
+            return true;
         }
         protected abstract void OnGUI(LocalizationBehavior component, T context);
 

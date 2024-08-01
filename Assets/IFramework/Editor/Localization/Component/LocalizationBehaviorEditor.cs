@@ -21,6 +21,10 @@ namespace IFramework.Localization
 
         class ObjectActorEditor<V> : LocalizationMapActorEditor<ObjectActor<V>, V, LocalizationBehavior> where V : UnityEngine.Object
         {
+            protected override bool NeedExecute()
+            {
+                return false;
+            }
             protected override V Draw(string lan, V value) => EditorGUILayout.ObjectField(lan, value, typeof(V), false) as V;
         }
 
@@ -92,8 +96,12 @@ namespace IFramework.Localization
                         var type0 = types[0];
                         if (typeof(ObjectActor<>).MakeGenericType(type0) == FieldType)
                         {
+                            new ObjectActorEditor<UnityEngine.Object>();
                             if (!insMap_obj.ContainsKey(type0))
-                                insMap_obj.Add(type0, CreateEditor(typeof(ObjectActorEditor<>).MakeGenericType(type0)));
+                            {
+                                var genericType = typeof(ObjectActorEditor<>).MakeGenericType(new Type[] { typeof(LocalizationBehavior), type0 });
+                                insMap_obj.Add(type0, CreateEditor(genericType));
+                            }
                             var editor = insMap_obj[type0];
                             var value = actor;
                             AddField(actor.name, editor, value);
