@@ -30,17 +30,19 @@ namespace IFramework
             //InitComponentsEnd
         }
         private UIItemViewCollection collection;
+        private UIEventBox eve;
         protected override void OnLoad()
         {
-            BindButton(this.Close, (Launcher.Instance.game as UIGame).CloseView);
-            BindButton(this.add, Add);
-            BindButton(this.remove, Remove);
+            eve = new UIEventBox();
+            BindButton(this.Close, (Launcher.Instance.game as UIGame).CloseView).AddTo(eve);
+            BindButton(this.add, Add).AddTo(eve);
+            BindButton(this.remove, Remove).AddTo(eve);
             collection = new UIItemViewCollection((Launcher.Instance.game as UIGame).ui);
         }
-        private Stack<PanelOneItemView> queue=new Stack<PanelOneItemView>();
+        private Stack<PanelOneItemView> queue = new Stack<PanelOneItemView>();
         private void Remove()
         {
-            if (queue.Count == 0) return; 
+            if (queue.Count == 0) return;
             collection.Set(queue.Pop());
         }
         private async void Add()
@@ -60,6 +62,7 @@ namespace IFramework
 
         protected override void OnClose()
         {
+            eve.Dispose();
         }
     }
 }

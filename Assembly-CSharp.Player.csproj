@@ -65,6 +65,7 @@
     <Compile Include="Assets\Project\Examples\UI\UIGame.cs" />
     <Compile Include="Assets\Project\Examples\UI\PanelOneItemView.cs" />
     <Compile Include="Assets\Exend\Localization\LocalizationTMP_Text.cs" />
+    <Compile Include="Assets\Project\Examples\Record\RecordGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
