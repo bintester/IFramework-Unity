@@ -59,13 +59,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Project\Examples\UI\PanelOneView.cs" />
+    <Compile Include="Assets\Project\Examples\Record\RecordGame.cs" />
     <Compile Include="Assets\Project\Examples\Localization\LocalizationGame.cs" />
     <Compile Include="Assets\Project\Examples\RedPoint\redPointGame.cs" />
     <Compile Include="Assets\Project\Examples\UI\PanelNames_UIGame.cs" />
     <Compile Include="Assets\Project\Examples\UI\UIGame.cs" />
     <Compile Include="Assets\Project\Examples\UI\PanelOneItemView.cs" />
     <Compile Include="Assets\Exend\Localization\LocalizationTMP_Text.cs" />
-    <Compile Include="Assets\Project\Examples\Record\RecordGame.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

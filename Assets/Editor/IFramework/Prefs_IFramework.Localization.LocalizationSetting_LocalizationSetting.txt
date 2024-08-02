@@ -1,5 +1,5 @@
 {
-    "_localizationType": "EN",
+    "_localizationType": "CN",
     "_defaultData": "Assets/Project/Examples/Localization/New Localization Data.asset",
     "_lineReg": "\"",
     "_fieldReg": "\\G(?:^|,)(?:\"((?>[^\"]*)(?>\"\"[^\"]*)*)\"|([^\",]*))",

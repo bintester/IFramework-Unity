@@ -8,12 +8,13 @@
 *********************************************************************************/
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.UI;
 using UnityEngine;
 
 namespace IFramework.UI
 {
     [CustomEditor(typeof(Empty4Raycast))]
-    class Empty4RaycastEditor : Editor
+    class Empty4RaycastEditor : GraphicEditor
     {
         class SelectionInfo
         {
@@ -26,7 +27,7 @@ namespace IFramework.UI
             public bool mouseIsOverLine;
         }
 
-        private float pointRadius => 0.8f * (rootCanvas == null ? 1f : rootCanvas.transform.localScale.x);
+        private float pointRadius => 8f * (rootCanvas == null ? 1f : rootCanvas.transform.localScale.x);
         private bool editting = false;
         private bool needsRepaint = false;
         private Vector2 pivot;
@@ -62,8 +63,9 @@ namespace IFramework.UI
         }
 
 
-        private void OnEnable()
+        protected override void OnEnable()
         {
+            base.OnEnable();
             obj = (Empty4Raycast)target;
             objTrans = obj.GetComponent<RectTransform>();
             UpdatePivot();
@@ -74,9 +76,11 @@ namespace IFramework.UI
 
             Undo.undoRedoPerformed -= UpdatePivot;
             Undo.undoRedoPerformed += UpdatePivot;
+
         }
-        private void OnDisable()
+        protected override void OnDisable()
         {
+            base.OnDisable();
             editting = false;
             UpdateHandles();
 
@@ -138,7 +142,8 @@ namespace IFramework.UI
                     break;
 
                 case EventType.Layout:
-                    HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
+                    if (editting)
+                        HandleUtility.AddDefaultControl(GUIUtility.GetControlID(FocusType.Passive));
                     break;
 
                 default:

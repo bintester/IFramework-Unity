@@ -30,14 +30,24 @@ namespace IFramework
             //InitComponentsEnd
         }
         private UIItemViewCollection collection;
-        private UIEventBox eve;
+        private UIEventBox eve_ui;
+        private EventBox eve;
+        const string eve_key_remove = "eve_key_remove";
         protected override void OnLoad()
         {
-            eve = new UIEventBox();
-            BindButton(this.Close, (Launcher.Instance.game as UIGame).CloseView).AddTo(eve);
-            BindButton(this.add, Add).AddTo(eve);
-            BindButton(this.remove, Remove).AddTo(eve);
+            eve_ui = new UIEventBox();
+            eve = new EventBox();
+            BindButton(this.Close, (Launcher.Instance.game as UIGame).CloseView).AddTo(eve_ui);
+            BindButton(this.add, Add).AddTo(eve_ui);
+            BindButton(this.remove, () =>
+            {
+                Events.Publish(eve_key_remove, null);
+            }).AddTo(eve_ui);
             collection = new UIItemViewCollection((Launcher.Instance.game as UIGame).ui);
+            eve.Subscribe(eve_key_remove, (e) =>
+            {
+                Remove();
+            });
         }
         private Stack<PanelOneItemView> queue = new Stack<PanelOneItemView>();
         private void Remove()
@@ -62,6 +72,7 @@ namespace IFramework
 
         protected override void OnClose()
         {
+            eve_ui.Dispose();
             eve.Dispose();
         }
     }
