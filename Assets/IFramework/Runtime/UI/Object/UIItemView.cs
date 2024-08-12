@@ -26,7 +26,7 @@ namespace IFramework.UI
             completed?.Invoke();
             completed = null;
         }
-        public async void Load(string path, UIItemOperation op, Transform parent)
+        internal async void Load(string path, UIItemOperation op, Transform parent)
         {
             await op;
             var go = op.gameObject;

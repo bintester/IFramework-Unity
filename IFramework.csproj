@@ -100,7 +100,7 @@
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\PanelCollection.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemsPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemViewCollection.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIAsyncOperation.cs" />
@@ -123,7 +123,7 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Group\IViewEventHandler.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
-    <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\UIModule.ItemPool.cs" />
+    <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\ItemPool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />

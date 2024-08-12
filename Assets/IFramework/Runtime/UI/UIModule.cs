@@ -15,13 +15,13 @@ using static IFramework.UI.UIPanel;
 
 namespace IFramework.UI
 {
-    public partial class UIModule : UpdateModule
+    public class UIModule : UpdateModule
     {
-        const string item_layer = "Items";
-        const string raycast_layer = "RayCast";
+        public const string item_layer = "Items";
+        public const string rayCast_layer = "RayCast";
         public Canvas canvas { get; private set; }
         private IGroups _groups;
-        private UIAsset _asset;
+        internal UIAsset _asset;
         private Dictionary<UILayer, List<UIPanel>> _panelOrders;
         private Dictionary<string, RectTransform> _layers;
         private Queue<LoadPanelAsyncOperation> asyncLoadQueue;
@@ -32,6 +32,15 @@ namespace IFramework.UI
         private bool _force_show_raycast;
         private IUIDelegate del;
         private int _fullScreenCount;
+        class LayerChangeCheckData
+        {
+            public UIPanel layer_top = null;
+            public UIPanel layer_top_visible = null;
+            public int fullScreenCount;
+        }
+        private LayerChangeCheckData check_show;
+        private LayerChangeCheckData check_hide;
+        private LayerChangeCheckData check_close;
 
         protected override void Awake()
         {
@@ -39,6 +48,9 @@ namespace IFramework.UI
             _layers = new Dictionary<string, RectTransform>();
             asyncLoadQueue = new Queue<LoadPanelAsyncOperation>();
             _itemPool = new ItemsPool(this);
+            check_show = new LayerChangeCheckData();
+            check_hide = new LayerChangeCheckData();
+            check_close = new LayerChangeCheckData();
         }
 
 
@@ -80,11 +92,11 @@ namespace IFramework.UI
             CanvasGroup group = items.gameObject.AddComponent<CanvasGroup>();
             group.alpha = 0f;
             group.interactable = false;
-            var ray = CreateLayer(raycast_layer);
+            var ray = CreateLayer(rayCast_layer);
             raycast = ray.gameObject.AddComponent<Empty4Raycast>();
         }
 
-        private RectTransform GetLayerRectTransform(string layer)
+        internal RectTransform GetLayerRectTransform(string layer)
         {
             return _layers[layer];
         }
@@ -111,14 +123,13 @@ namespace IFramework.UI
             if (!instert)
                 list.Add(panel);
         }
-        UIPanel layer_top = null;
-        UIPanel layer_top_visible = null;
-        int lastfullScreenCount;
-        private void BeginChangeLayerTopChangeCheck(UILayer layer)
+
+
+        private void BeginChangeLayerTopChangeCheck(UILayer layer, LayerChangeCheckData data)
         {
-            layer_top = GetTopPanel(layer);
-            layer_top_visible = GetTopVisiblePanel(layer);
-            lastfullScreenCount = _fullScreenCount;
+            data.layer_top = GetTopPanel(layer);
+            data.layer_top_visible = GetTopVisiblePanel(layer);
+            data.fullScreenCount = _fullScreenCount;
         }
         private void CalcHideSceneCount(string path, bool show)
         {
@@ -129,7 +140,7 @@ namespace IFramework.UI
             else
                 _fullScreenCount--;
         }
-        private void EndChangeLayerTopChangeCheck(UILayer layer, string path, bool show)
+        private void EndChangeLayerTopChangeCheck(UILayer layer, string path, bool show, LayerChangeCheckData data)
         {
             CalcHideSceneCount(path, show);
             var top = GetTopPanel(layer);
@@ -137,16 +148,16 @@ namespace IFramework.UI
 
 
 
-            if (top != layer_top)
+            if (top != data.layer_top)
                 del?.OnLayerTopChange(layer, top?.GetPath());
-            if (top_visible != layer_top_visible)
+            if (top_visible != data.layer_top_visible)
                 del?.OnLayerTopVisibleChange(layer, top_visible?.GetPath());
-            if (lastfullScreenCount != _fullScreenCount)
+            if (data.fullScreenCount != _fullScreenCount)
                 del?.OnFullScreenCount(_fullScreenCount > 0, _fullScreenCount);
 
-            layer_top = null;
-            layer_top_visible = null;
-            lastfullScreenCount = -1;
+            data.layer_top = null;
+            data.layer_top_visible = null;
+            data.fullScreenCount = -1;
 
         }
         private UIPanel GetTopVisiblePanel(UILayer layer)
@@ -308,7 +319,7 @@ namespace IFramework.UI
             }
             UILayer layer = GetPanelLayer(path);
 
-            EndChangeLayerTopChangeCheck(layer, path, true);
+            EndChangeLayerTopChangeCheck(layer, path, true, check_show);
             if (op != null)
                 op.SetComplete();
         }
@@ -322,7 +333,7 @@ namespace IFramework.UI
                 throw new Exception("Please Set UILoader First");
             ShowPanelAsyncOperation show_op = new ShowPanelAsyncOperation();
             UILayer layer = GetPanelLayer(path);
-            BeginChangeLayerTopChangeCheck(layer);
+            BeginChangeLayerTopChangeCheck(layer, check_show);
             var panel = Find(path);
             if (panel != null)
                 OnShowCallBack(path, panel, show_op);
@@ -356,12 +367,12 @@ namespace IFramework.UI
             if (panel != null)
             {
                 UILayer layer = GetPanelLayer(path);
-                BeginChangeLayerTopChangeCheck(layer);
+                BeginChangeLayerTopChangeCheck(layer, check_hide);
                 this._groups.OnHide(path);
                 panel.SetState(PanelState.OnHide);
                 if (del != null)
                     del.OnPanelHide(path);
-                EndChangeLayerTopChangeCheck(layer, path, false);
+                EndChangeLayerTopChangeCheck(layer, path, false, check_hide);
             }
         }
 
@@ -371,17 +382,17 @@ namespace IFramework.UI
 
             if (panel != null)
             {
+                UILayer layer = GetPanelLayer(path);
+                BeginChangeLayerTopChangeCheck(layer, check_close);
                 this._groups.OnClose(path);
                 panel.SetState(PanelState.OnClose);
 
                 _groups.UnSubscribe(path);
                 panels.Remove(path);
-                UILayer layer = GetPanelLayer(path);
-                BeginChangeLayerTopChangeCheck(layer);
                 DestroyPanel(path, panel);
                 if (del != null)
                     del.OnPanelClose(path);
-                EndChangeLayerTopChangeCheck(layer, path, false);
+                EndChangeLayerTopChangeCheck(layer, path, false, check_close);
             }
         }
 
