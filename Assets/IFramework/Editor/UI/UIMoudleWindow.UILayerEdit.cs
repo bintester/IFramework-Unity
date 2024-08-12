@@ -9,6 +9,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Linq;
 using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
@@ -75,7 +76,7 @@ namespace IFramework.UI
                             maxWidth=30,
                             width=30,
                         },
-                
+
                         new MultiColumnHeaderState.Column()
                         {
                             headerContent=new GUIContent("FullScreen"),
@@ -201,7 +202,7 @@ namespace IFramework.UI
                     if (data.isResourcePath)
                         GUI.Label(args.GetCellRect(5), EditorGUIUtility.IconContent("d_P4_CheckOutRemote"));
                     //GUI.Toggle(args.GetCellRect(5), data.isResourcePath, "");
-                    data.fullScreen= GUI.Toggle(args.GetCellRect(6), data.fullScreen,"");
+                    data.fullScreen = GUI.Toggle(args.GetCellRect(6), data.fullScreen, "");
                     GUI.Label(args.GetCellRect(7), data.order.ToString());
                     GUI.Label(args.GetCellRect(8), data.path);
 
@@ -272,7 +273,25 @@ namespace IFramework.UI
                     return true;
                 }
 
-
+                protected override void ContextClickedItem(int id)
+                {
+                    if (id < layerNames.Length) return;
+                    var data = datas[id - layerNames.Length];
+                    GenericMenu menu = new GenericMenu();
+                    for (int i = 0; i < layerNames.Length; i++)
+                    {
+                        var name = layerNames[i];
+                        if (data.layer.ToString() == name) continue;
+                        menu.AddItem(new GUIContent($"MoveTo/{name}"), false, () =>
+                        {
+                            Set((UILayer)Enum.Parse(typeof(UILayer), name), int.MaxValue, data);
+                            Reload();
+                            SetExpanded(layerNames.ToList().IndexOf(name), true);
+                        });
+                    }
+                    menu.ShowAsContext();
+                    //base.ContextClickedItem(id);
+                }
                 private void Set(UILayer layer, int index, Data data)
                 {
                     List<Data> last = datas.FindAll(x => x.layer == layer);
