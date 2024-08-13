@@ -126,12 +126,12 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\ItemPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\Audio.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAsset.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioPref.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\AudioAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAssetContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\AudioChannel.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\IAudioConfig.cs" />
     <Compile Include="Assets\IFramework\Runtime\Audio\AudioPlayer.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioPrefRecorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />

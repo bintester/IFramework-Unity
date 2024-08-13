@@ -4,35 +4,60 @@
  *UnityVersion:   2021.3.33f1c1
  *Date:           2024-08-13
 *********************************************************************************/
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 namespace IFramework.Audio
 {
+    [System.Serializable]
+    public class AudioPref
+    {
+        public Dictionary<int, float> pairs = new Dictionary<int, float>();
+
+        public float GetVolume(int channel)
+        {
+            float vol = -1;
+            pairs.TryGetValue(channel, out vol);
+            return vol;
+        }
+
+        internal void SetVolume(int channel, float volume)
+        {
+            pairs[channel] = volume;
+        }
+    }
     public static class Audio
     {
 
         internal static IAudioConfig config;
-        internal static IAudioPref pref;
+        internal static IAudioPrefRecorder recorder;
         internal static IAudioAsset asset;
+        static AudioPref pref;
 
         private static Dictionary<int, AudioChannel> channels;
         public static GameObject root;
         private static Dictionary<string, AudioAsset> assets;
 
-        public static void Init(IAudioConfig config, IAudioPref pref, IAudioAsset asset)
+        public static void Init(IAudioConfig config, IAudioPrefRecorder recorder, IAudioAsset asset)
         {
             Audio.asset = asset;
             Audio.config = config;
-            Audio.pref = pref;
+            Audio.recorder = recorder;
+            pref = recorder.Read();
             assets = new Dictionary<string, AudioAsset>();
             channels = new Dictionary<int, AudioChannel>();
             root = new GameObject("Sound");
 
             root.transform.SetParent(Launcher.Instance.transform);
             var values = config.GetChannels();
-            foreach (var item in values)
-                SetVolume((int)item, pref.GetVolume(item));
+            foreach (var channel in values)
+            {
+                var vol = GetVolume(channel);
+                if (vol != -1)
+                    vol = config.GetDefaultVolume(channel);
+                SetVolume(channel, vol);
+            }
             Launcher.BindUpdate(OnUpdate);
             Launcher.BindDisable(Dispose);
 
@@ -42,6 +67,8 @@ namespace IFramework.Audio
         public static void SetVolume(int channel, float volume)
         {
             pref.SetVolume(channel, volume);
+            recorder.Write(pref);
+
             AudioChannel chan = GetChannel(channel);
             chan.SetVolume(volume);
         }

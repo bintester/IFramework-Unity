@@ -10,7 +10,7 @@ namespace IFramework.Audio
 {
     public interface IAudioAssetContext
     {
-        bool isDone { get; set; }
+        bool isDone { get; }
 
         public void Load(string path);
         AudioClip GetClip();

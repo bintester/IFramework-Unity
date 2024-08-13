@@ -17,6 +17,7 @@ namespace IFramework.Audio
         string GetSoundPath(int sound_id);
         int GetSoundChannel(int sound_id);
         List<int> GetChannels();
+        float GetDefaultVolume(int channel);
     }
 
 }

@@ -6,10 +6,10 @@
 *********************************************************************************/
 namespace IFramework.Audio
 {
-    public interface IAudioPref
+    public interface IAudioPrefRecorder
     {
-        void SetVolume(int channel, float volume);
-        float GetVolume(int channel);
+        AudioPref Read();
+        void Write(AudioPref pref);
     }
 
 }
