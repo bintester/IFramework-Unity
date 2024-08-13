@@ -10,9 +10,9 @@ namespace IFramework.Audio
 {
     public interface IAudioConfig
     {
-        float GetSoundVolume(int id);
-        bool GetSoundLoop(int id);
-        bool GetSoundCover(int id);
+        float GetSoundVolume(int sound_id);
+        bool GetSoundLoop(int sound_id);
+        bool GetSoundCover(int sound_id);
         int GetSoundExistTime(int sound_id);
         string GetSoundPath(int sound_id);
         int GetSoundChannel(int sound_id);
