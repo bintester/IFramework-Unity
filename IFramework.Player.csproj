@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationPrefab.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MvcGroups.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\RedPoint\RedActiveDot.cs" />
     <Compile Include="Assets\IFramework\Runtime\Record\BaseState.cs" />
     <Compile Include="Assets\IFramework\Runtime\Record\CommandState.cs" />
@@ -67,12 +68,14 @@
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationData.cs" />
     <Compile Include="Assets\IFramework\Runtime\Record\IRecorderActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\GenericPriorityQueue.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\AudioPlayer.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationBehavior.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\SerializableDictionary.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\IGenericPriorityQueueNode.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationGraphic.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\IAwaiter.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAssetContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Actor\LocalizationMapActor.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemView.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIAsset.cs" />
@@ -85,6 +88,7 @@
     <Compile Include="Assets\IFramework\Runtime\UI\IUIDelegate.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\LocalizationPref.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\Singleton.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\AudioAsset.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\ScriptCreatorContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationImage.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Empty4Raycast.cs" />
@@ -98,8 +102,11 @@
     <Compile Include="Assets\IFramework\Runtime\UI\Group\MixedGroups.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\ModulePriority.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UIEx.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\Audio.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\ILocalizationContext.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\PanelCollection.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\AudioChannel.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioConfig.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\ItemsPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\UILayer.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\UIItemViewCollection.cs" />
@@ -115,6 +122,7 @@
     <Compile Include="Assets\IFramework\Runtime\Core\ObjectPool.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Singleton\MonoSingleton.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\EventBox.cs" />
+    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioPrefRecorder.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Log.cs" />
     <Compile Include="Assets\IFramework\Runtime\Localization\Component\LocalizationAssets.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Game.cs" />
@@ -124,14 +132,6 @@
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\LoomModule.cs" />
     <Compile Include="Assets\IFramework\Runtime\Core\Modules\Modules.cs" />
     <Compile Include="Assets\IFramework\Runtime\UI\Object\Item\ItemPool.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\Audio.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAsset.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\AudioAsset.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioAssetContext.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\AudioChannel.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioConfig.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\AudioPlayer.cs" />
-    <Compile Include="Assets\IFramework\Runtime\Audio\IAudioPrefRecorder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\IFramework\Runtime\IFramework.asmdef" />
